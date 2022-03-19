@@ -26,10 +26,10 @@
   <h2>Busca Pokemon</h2>  
   <mat-form-field class="pokemon-search-input" appearance="fill">
     <mat-label>Nome do pokemon</mat-label>
-    <input matInput placeholder="Nome do pokemon">
+    <input (keydown.enter)="searchPokemon()" [(ngModel)]='pokemonSearchText' matInput/>
   </mat-form-field>
 
-  <button class="search-pokemon-btn" mat-raised-button color="primary">Procurar</button>
+  <button (click)="searchPokemon()" class="search-pokemon-btn" mat-raised-button color="primary">Procurar</button>
 
   <svg id="clouds" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677" viewBox="0 0 2611.084 485.677">
     <title>Gray Clouds Background</title>

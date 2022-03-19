@@ -1,6 +1,6 @@
 export class PokemonModel {
-    Name: string;
-    Type: string;
+    name?: string;
+    type?: string;
 }
 
 /**
